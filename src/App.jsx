@@ -8,6 +8,7 @@ import aboutRightDec from './assets/images/about-right-dec.png';
 import whiteLogo from './assets/images/white-logo.png';
 import quoteImage from './assets/images/quote.png';
 import clientImage from './assets/images/client-image.jpg';
+import Clients from "./components/Clients";
 
 function App() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -262,7 +263,7 @@ function App() {
         </div>
       </div>
 
-      {/* Clients Section */}
+      {/* 
       <div id="clients" className="the-clients">
         <div className="container">
           <div className="row">
@@ -277,10 +278,10 @@ function App() {
               <div className="naccs">
                 <div className="grid">
                   <div className="row">
-                    {/* Client reviews with nested structure omitted for brevity - follow same pattern */}
+                  
                     <div className="col-lg-7 align-self-center">
                       <div className="menu">
-                        {/* First review */}
+                       
                         <div className="first-thumb active">
                           <div className="thumb">
                             <div className="row">
@@ -298,7 +299,7 @@ function App() {
                             </div>
                           </div>
                         </div>
-                        {/* Additional reviews omitted for brevity */}
+                        
                       </div>
                     </div>
                     <div className="col-lg-5">
@@ -324,7 +325,7 @@ function App() {
                             </div>
                           </div>
                         </li>
-                        {/* Additional client content elements omitted for brevity */}
+                        
                       </ul>
                     </div>
                   </div>
@@ -333,7 +334,9 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      
+      <Clients />
 
       {/* Pricing Section */}
       <div id="pricing" className="pricing-tables">
