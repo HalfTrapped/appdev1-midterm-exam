@@ -49,7 +49,7 @@ function App() {
                   <li className="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
                   <li>
                     <div className="gradient-button">
-                      <a id="modal_trigger" href="#modal">
+                      <a id="modal_trigger" href="#modal" onClick={handleToggleModal}>
                         <i className="fa fa-sign-in-alt"></i> Sign In Now
                       </a>
                     </div>
@@ -76,7 +76,7 @@ function App() {
 }>
         <div className="popupHeader">
           <span className="header_title">Login</span>
-          <span className="modal_close"><i className="fa fa-times"></i></span>
+          <span className="modal_close" onClick={handleToggleModal} ><i className="fa fa-times"></i></span>
         </div>
         <section className="popupBody">
           <div className="social_login">
