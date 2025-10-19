@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// Import images from src/assets/images
 import logo from './assets/images/logo.png';
 import sliderDec from './assets/images/slider-dec.png';
 import headingLineDec from './assets/images/heading-line-dec.png';
@@ -19,15 +18,19 @@ function App() {
 
   return (
     <>
-      {/* Preloader */}
+      {/*
       <div id="js-preloader" className="js-preloader">
         <div className="preloader-inner">
           <span className="dot"></span>
           <div className="dots">
-            <span></span><span></span><span></span>
+            <span/>
+            <span/>
+            <span/>
           </div>
         </div>
       </div>
+      */}
+      
 
       {/* Header */}
       <header className="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
@@ -60,7 +63,17 @@ function App() {
       </header>
 
       {/* Modal */}
-      <div id="modal" className="popupContainer" style={{ display: 'none' }}>
+      <div id="modal" className="popupContainer" style={toggleModal ?
+        {
+          display: "block",
+          position: "fixed",
+          opacity: 1,
+          zIndex: 11000,
+          left: "50%",
+          marginLeft: "-165px",
+          top: 100,
+        } : {display: "none",}
+}>
         <div className="popupHeader">
           <span className="header_title">Login</span>
           <span className="modal_close"><i className="fa fa-times"></i></span>
@@ -498,6 +511,15 @@ function App() {
           </div>
         </div>
       </footer>
+      <div
+        id="lean_overlay"
+        style={
+          toggleModal
+          ? { display: "block", opacity: "0.6" }
+          : { display: "none" }
+          }
+      />
+
     </>
   );
 }
