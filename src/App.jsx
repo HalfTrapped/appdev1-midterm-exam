@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 // Import images from src/assets/images
 import logo from './assets/images/logo.png';
 import sliderDec from './assets/images/slider-dec.png';
